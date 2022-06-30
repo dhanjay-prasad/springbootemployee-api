@@ -17,6 +17,7 @@ spec:
         - name: springboot-employee-api-apples
           image: pasapples/springbootemployee:multi-stage-add-layers
           imagePullPolicy: Always
-          securityContext.allowPrivilegeEscalation: false
+          securityContext:
+            allowPrivilegeEscalation: false
           ports:
             - containerPort: 8080
